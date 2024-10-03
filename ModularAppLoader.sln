@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModularAppLoader", "Modular
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExporterAUD", "ExporterAUD\ExporterAUD.csproj", "{23DFB689-AA11-4ABB-ACE4-A082610C73D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EchoHello", "EchoHello\EchoHello.csproj", "{322613DF-B468-4E97-B6C5-D6726F83C02C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EchoHello", "EchoHello\EchoHello.csproj", "{322613DF-B468-4E97-B6C5-D6726F83C02C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TenRen", "TenRen\TenRen.csproj", "{3567E554-8231-4DD4-84A8-5A88D0859D69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{322613DF-B468-4E97-B6C5-D6726F83C02C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{322613DF-B468-4E97-B6C5-D6726F83C02C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{322613DF-B468-4E97-B6C5-D6726F83C02C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3567E554-8231-4DD4-84A8-5A88D0859D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3567E554-8231-4DD4-84A8-5A88D0859D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3567E554-8231-4DD4-84A8-5A88D0859D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3567E554-8231-4DD4-84A8-5A88D0859D69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

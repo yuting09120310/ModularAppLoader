@@ -124,10 +124,22 @@ namespace ModularAppLoader
             DisplayPlugins(); // 更新顯示
         }
 
+
         private void listViewPlugins_Click(object sender, EventArgs e)
         {
+            if (listViewPlugins.SelectedItems.Count > 0)
+            {
+                ListViewItem selectedItem = listViewPlugins.SelectedItems[0];
 
+                string name = selectedItem.SubItems[0].Text;
+                string description = selectedItem.SubItems[1].Text; 
+                string timeUntilNextExecution = selectedItem.SubItems[2].Text;
+                string nextExecutionTime = selectedItem.SubItems[3].Text; 
+
+                MessageBox.Show($"您选择的插件：{name}\n描述：{description}\n距离下次执行：{timeUntilNextExecution}\n下次执行时间：{nextExecutionTime}", "插件信息");
+            }
         }
+
     }
 
 
