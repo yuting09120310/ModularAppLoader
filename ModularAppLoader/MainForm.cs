@@ -91,7 +91,7 @@ namespace ModularAppLoader
                 var logLines = File.ReadAllLines(logFilePath);
                 foreach (var line in logLines)
                 {
-                    listViewLog.Items.Add(line); // 將 log 添加到 ListView
+                    //listViewLog.Items.Add(line); // 將 log 添加到 ListView
                 }
             }
         }
@@ -122,6 +122,11 @@ namespace ModularAppLoader
                 }
             }
             DisplayPlugins(); // 更新顯示
+        }
+
+        private void listViewPlugins_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
