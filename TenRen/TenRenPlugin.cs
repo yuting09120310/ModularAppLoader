@@ -9,6 +9,9 @@ namespace TenRen
 {
     public class TenRenPlugin : IPlugin
     {
+
+        private string AppName = "TenRen";
+
         public void Execute()
         {
             LogCompletionTime("本次作業執行");
@@ -71,10 +74,10 @@ namespace TenRen
         private void LogCompletionTime(string message)
         {
             // 取得應用程式啟動資料夾路徑
-            string appPath = AppDomain.CurrentDomain.BaseDirectory;
+            string appPath = AppDomain.CurrentDomain.BaseDirectory + "ModularLog";
 
             // 建立或追加到 completion_log.txt 檔案
-            string logFilePath = Path.Combine(appPath, "completion_log.txt");
+            string logFilePath = Path.Combine(appPath, $"{AppName}.txt");
 
             // 記錄當前時間和自訂訊息
             string logMessage = $"{DateTime.Now:yyyy/MM/dd HH:mm:ss} - {message}";
